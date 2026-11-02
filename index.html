@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Now</title>
+  <meta name="description" content="Current weather and a five-day forecast for any city, from the Open-Meteo API.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="weather">
+    <h1>🌤️ Weather Now</h1>
+    <form id="searchForm" class="search">
+      <label for="city" class="sr-only">City</label>
+      <input id="city" type="search" value="Orlando" placeholder="City name" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <p id="status" class="status" aria-live="polite"></p>
+    <section id="current" class="current" hidden></section>
+    <ol id="forecast" class="forecast"></ol>
+    <p class="credit">Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
